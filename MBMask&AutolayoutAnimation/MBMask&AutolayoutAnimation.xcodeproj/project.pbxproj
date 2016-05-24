@@ -14,6 +14,7 @@
 		C8F2CBA71CF3FAD400D5C047 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C8F2CBA61CF3FAD400D5C047 /* Assets.xcassets */; };
 		C8F2CBAA1CF3FAD400D5C047 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C8F2CBA81CF3FAD400D5C047 /* LaunchScreen.storyboard */; };
 		C8F2CBB31CF3FC0500D5C047 /* MBAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = C8F2CBB21CF3FC0500D5C047 /* MBAnimator.m */; };
+		C8F2CBB71CF40CBD00D5C047 /* 遮罩动画约束动画.gif in Resources */ = {isa = PBXBuildFile; fileRef = C8F2CBB61CF40CBD00D5C047 /* 遮罩动画约束动画.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +30,7 @@
 		C8F2CBAB1CF3FAD400D5C047 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C8F2CBB11CF3FC0500D5C047 /* MBAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MBAnimator.h; sourceTree = "<group>"; };
 		C8F2CBB21CF3FC0500D5C047 /* MBAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MBAnimator.m; sourceTree = "<group>"; };
+		C8F2CBB61CF40CBD00D5C047 /* 遮罩动画约束动画.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "遮罩动画约束动画.gif"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,7 @@
 		C8F2CB9A1CF3FAD400D5C047 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				C8F2CBB61CF40CBD00D5C047 /* 遮罩动画约束动画.gif */,
 				C8F2CB9B1CF3FAD400D5C047 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -144,6 +147,7 @@
 			files = (
 				C8F2CBAA1CF3FAD400D5C047 /* LaunchScreen.storyboard in Resources */,
 				C8F2CBA71CF3FAD400D5C047 /* Assets.xcassets in Resources */,
+				C8F2CBB71CF40CBD00D5C047 /* 遮罩动画约束动画.gif in Resources */,
 				C8F2CBA51CF3FAD400D5C047 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -315,6 +319,7 @@
 				C8F2CBB01CF3FAD400D5C047 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
