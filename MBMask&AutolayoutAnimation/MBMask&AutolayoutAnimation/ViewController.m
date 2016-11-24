@@ -24,6 +24,9 @@
 
 @implementation ViewController
 
+#pragma mark - 
+#pragma mark - life cycle
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
