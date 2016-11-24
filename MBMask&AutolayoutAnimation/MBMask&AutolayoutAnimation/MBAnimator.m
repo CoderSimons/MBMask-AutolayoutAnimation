@@ -18,8 +18,7 @@ static CGFloat const kBottomLineWidth = 275.0;
 /**
  *  label的动画: 垂直方向平移
  */
-+ (void)titleLabelAnimationWithLabel:(UILabel *)label
-{
++ (void)titleLabelAnimationWithLabel:(UILabel *)label {
     
     [UIView animateWithDuration:2 animations:^{
         label.transform = CGAffineTransformIdentity;
@@ -28,8 +27,7 @@ static CGFloat const kBottomLineWidth = 275.0;
 /**
  *  手机图标的动画: 水平方向平移
  */
-+ (void)mobileImageViewAnimationWithImageView:(UIImageView *)imageView
-{
++ (void)mobileImageViewAnimationWithImageView:(UIImageView *)imageView {
     [UIView animateWithDuration:2 animations:^{
         imageView.transform = CGAffineTransformIdentity;
     }];
@@ -41,8 +39,7 @@ static CGFloat const kBottomLineWidth = 275.0;
  *  @param constraint 执行动画的约束
  *  @param view       执行约束动画必须 更新 (执行动画的约束的控件的父控件) 的 布局
  */
-+ (void)textFieldBottomLineAnimationWithConstraint:(NSLayoutConstraint *)constraint andView:(UIView *)view
-{
++ (void)textFieldBottomLineAnimationWithConstraint:(NSLayoutConstraint *)constraint andView:(UIView *)view {
     constraint.constant = kBottomLineWidth;
     [UIView animateWithDuration:2 animations:^{
         [view layoutIfNeeded];
@@ -55,8 +52,7 @@ static CGFloat const kBottomLineWidth = 275.0;
  *  @param view      需要遮罩的控件
  *  @param beginTime 遮罩动画的开始时间
  */
-+ (void)maskAnimationWithView:(UIView *)view andBeginTime:(NSTimeInterval)beginTime
-{
++ (void)maskAnimationWithView:(UIView *)view andBeginTime:(NSTimeInterval)beginTime {
     // 1.创建遮罩layer的path, 从动画前到动画后两种边框path
     CGPathRef beginPath = [UIBezierPath bezierPathWithRect:CGRectMake(0, 0, 0, CGRectGetHeight(view.frame))].CGPath;
     CGPathRef endPath = [UIBezierPath bezierPathWithRect:CGRectMake(0, 0, CGRectGetWidth(view.frame), CGRectGetHeight(view.frame))].CGPath;
@@ -86,8 +82,7 @@ static CGFloat const kBottomLineWidth = 275.0;
  *  @param button   为button执行动画
  *  @param progress 用户输入手机号的进度, 由此来确定遮罩path的大小
  */
-+ (void)maskAnimationWithButton:(UIButton *)button andProgress:(CGFloat)progress
-{
++ (void)maskAnimationWithButton:(UIButton *)button andProgress:(CGFloat)progress {
     // 程序一启动, 我就应该给button加上遮罩, 第一次只是加遮罩, 还不用执行动画
     static CAShapeLayer *maskLayer = nil;
     if (!maskLayer) {
