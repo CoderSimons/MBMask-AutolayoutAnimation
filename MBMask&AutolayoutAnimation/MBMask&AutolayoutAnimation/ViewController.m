@@ -59,6 +59,9 @@
 
 }
 
+
+#pragma mark -
+#pragma mark - 
 /**
  *  输入手机号码textField的监听方法
  *
