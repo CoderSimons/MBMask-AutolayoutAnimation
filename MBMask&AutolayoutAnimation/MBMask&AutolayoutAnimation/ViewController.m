@@ -39,8 +39,7 @@
     
 }
 
-- (void)viewDidAppear:(BOOL)animated
-{
+- (void)viewDidAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
     // 执行动画
@@ -61,8 +60,7 @@
  *
  *  @param sender 监听的textField
  */
-- (IBAction)performButtonMaskAnimationWithTextField:(UITextField *)sender
-{
+- (IBAction)performButtonMaskAnimationWithTextField:(UITextField *)sender {
     NSInteger length = sender.text.length;
     
     // 1.计算用户输入手机号的进度
@@ -83,8 +81,7 @@
 /**
  *  触摸屏幕结束编辑退出键盘
  */
--(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event
-{
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     [self.view endEditing:YES];
 }
 
